@@ -1,0 +1,8 @@
+version: "2"
+services:
+  pgadmin3:
+    build: .
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      DISPLAY: unix:0
